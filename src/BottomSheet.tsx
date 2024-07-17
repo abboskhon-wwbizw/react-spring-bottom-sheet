@@ -121,7 +121,7 @@ export const BottomSheet = React.forwardRef<
     targetRef: containerRef,
     fallbackRef: overlayRef,
     initialFocusRef: initialFocusRef || undefined,
-    enabled: ready && blocking && initialFocusRef !== false,
+    enabled: ready && initialFocusRef !== false,
   })
 
   const { minSnap, maxSnap, maxHeight, findSnap } = useSnapPoints({
